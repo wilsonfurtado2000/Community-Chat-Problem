@@ -2,11 +2,11 @@ import { InfoOutlined, StarBorderOutlined } from "@material-ui/icons";
 import React, { useEffect, useRef } from "react";
 import { useSelector } from "react-redux";
 import styled from "styled-components";
-import { selectRoomId } from "./features/appSlice";
+import { selectRoomId } from "../Redux/features/appSlice";
 import ChatInput from "./ChatInput";
 import { useCollection } from "react-firebase-hooks/firestore";
 import { db } from "./firebase";
-import Message from "./Message";
+import Message from "./MessageComponent/Message";
 
 function Chat() {
   const chatRef = useRef(null);
